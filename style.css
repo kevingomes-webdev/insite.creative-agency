@@ -18,13 +18,19 @@ body {
     font-family: var(--font-family);
 }
 
+section {
+    margin: auto;
+    max-width: 900px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+
 /***Hero-Section***/
 
 .company-logo {
-    width: clamp(3rem, 5vw, 10rem);
-}
-
-.icon-services {
     width: clamp(3rem, 5vw, 10rem);
 }
 
