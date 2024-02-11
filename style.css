@@ -1,14 +1,35 @@
+:root {
+    --font-family: "DM Sans", sans-serif;
+}
+
 /***TABLE OF CONTENTS***/
 
 /***General***/
+/***Hero-Section***/
+/***Services-Section***/
+/***About-Us-Section***/
+/***Contact-Section***/
 /***Website-Decoration***/
 
 
+/***General***/
 
-/*General*/
-:root {
-  --font-family: "DM Sans", sans-serif;
+body {
+    font-family: var(--font-family);
 }
+
+/***Hero-Section***/
+
+.company-logo {
+    width: clamp(3rem, 5vw, 10rem);
+}
+
+/***Services-Section***/
+/***About-Us-Section***/
+/***Contact-Section***/
+/***Website-Decoration***/
+
+
 
 body {
     font-family: var(--font-family);
