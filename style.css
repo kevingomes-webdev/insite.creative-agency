@@ -1,0 +1,27 @@
+
+
+
+/**Scroll Bar**/
+
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1C1C1C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+/**Custom Cursor**/
+
+html {
+    cursor: url("./Svg/cursor.svg"), auto;
+}
