@@ -24,7 +24,18 @@ body {
     width: clamp(3rem, 5vw, 10rem);
 }
 
+.icon-services {
+    width: clamp(3rem, 5vw, 10rem);
+}
+
 /***Services-Section***/
+
+
+.icon-services {
+    width: clamp(2.5rem, 3vw, 7rem);
+}
+
+
 /***About-Us-Section***/
 /***Contact-Section***/
 /***Website-Decoration***/
