@@ -22,7 +22,7 @@ body {
     margin: 0;
 }
 
-section {
+.foreground {
     margin: auto;
     max-width: 900px;
 }
@@ -36,6 +36,22 @@ h4 {
 
 .company-logo {
     width: clamp(3rem, 5vw, 10rem);
+}
+
+.background {
+    position: relative;
+}
+
+.background video {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.foreground {
+    position: relative;
+    z-index: 1;
 }
 
 /***Services-Section***/
