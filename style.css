@@ -22,11 +22,6 @@ body {
     margin: 0;
 }
 
-.foreground {
-    margin: auto;
-    max-width: 900px;
-}
-
 h4 {
     text-transform: uppercase;
 }
@@ -39,11 +34,10 @@ h4 {
 }
 
 .background {
-    position: relative;
+    display: block;
 }
 
 .background video {
-    position: absolute;
     width: 100%;
     object-fit: cover;
     z-index: 0;
@@ -61,6 +55,55 @@ h4 {
     width: clamp(2.5rem, 3vw, 7rem);
 }
 
+/*************************************************/
+
+/* Style the section with background video */
+.background-video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Style the container for the background video */
+  .background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style the background video itself */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Style the content within the section */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Additional styles for other sections */
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .content {
+    max-width: 600px;
+    color: black;
+  }
 
 /***About-Us-Section***/
 /***Contact-Section***/
