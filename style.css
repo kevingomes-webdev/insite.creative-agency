@@ -18,7 +18,7 @@
 
 :root {
     /* Define your spacing scale */
-    --space-unit: 1rem;
+    --space-unit: 10rem;
     --space-xs: calc(0.5 * var(--space-unit));
     --space-sm: calc(1 * var(--space-unit));
     --space-md: calc(2 * var(--space-unit));
@@ -66,6 +66,12 @@ body {
     margin: 0;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 h4 {
     text-transform: uppercase;
 }
@@ -74,11 +80,15 @@ h4 {
 /***Hero-Section***/
 
 .company-logo {
-    width: clamp(3rem, 5vw, 10rem);
+    width: clamp(3rem, 8vw, 10rem);
 }
 
 h1 {
-    font-size: clamp(2.5rem, 3vw, 7rem);
+    font-size: clamp(2rem, 7vw, 5.5rem);
+}
+
+p {
+    font-size: clamp(0.7rem, 2vw, 1.2rem);
 }
 
 /***Services-Section***/
@@ -100,6 +110,7 @@ h1 {
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: clamp(10rem, 50vw, 50rem);
 }
 
 /* Style the background video */
@@ -129,11 +140,14 @@ h1 {
 /* Style the content */
 .content {
     position: relative;
-    max-width: 960px; /* Adjust this to your desired max-width */
+    max-width: 1200px; /* Adjust this to your desired max-width */
     margin: 0 auto;
     padding: 20px;
-    color: white;
     z-index: 2;
+}
+
+.content-white {
+    color: white;
 }
   
   /* Additional styles for other sections */
