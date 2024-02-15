@@ -1,9 +1,9 @@
 :root {
     --font-family: "DM Sans", sans-serif;
     --space-unit: 4vw;
-    --space-xs: calc(2 * var(--space-unit));
-    --space-sm: calc(2.5 * var(--space-unit));
-    --space-md: calc(3 * var(--space-unit));
+    --space-xs: calc(4 * var(--space-unit));
+    --space-sm: calc(4 * var(--space-unit));
+    --space-md: calc(4 * var(--space-unit));
 }
 
 /***TABLE OF CONTENTS***/
@@ -50,7 +50,7 @@
         .space-section {
             height: var(--space-md);
           }
-        }
+     }
 
 * {
     box-sizing: border-box;
@@ -63,19 +63,21 @@ body {
     margin: 0px;
 }
 
-h4 {
+h4, label {
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 
 /***Hero-Section***/
 
 .company-logo {
-    width: clamp(3rem, 8vw, 10rem);
+    width: clamp(4rem, 8vw, 10rem);
 }
 
 h1 {
     font-size: clamp(2rem, 7vw, 5.5rem);
+    font-weight: 900;
 }
 
 h2 {
@@ -129,7 +131,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Black overlay with 80% opacity */
+    background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 80% opacity */
     z-index: 1;
 }
 
@@ -159,16 +161,56 @@ p {
     gap: 3vw;
 }
 
-.icon-brands div {
-
-}
-
 .icon-brands img {
     width: clamp(4rem, 10vw, 15rem);
 }
 
 /***Contact-Section***/
-/***Website-Decoration***/
+
+input:focus {
+    border: 2px solid yellow;
+}
+
+input::placeholder {
+    color: grey;
+    opacity: 0.5;
+}
+
+input {
+    font-size: clamp(0.7rem, 2vw, 1.2rem);
+    font-family: var(--font-family);
+}
+
+@media screen and (max-width: 600px) {
+    .space-section {
+        height: var(--space-xs);
+      }
+    }
+ 
+
+  @media screen and (min-width: 600px) {
+    .space-section {
+        height: var(--space-sm);
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+        .space-section {
+            height: var(--space-md);
+          }
+        }
+
+    @media screen and (min-width: 1200px) {
+    .space-section {
+        height: var(--space-md);
+      }
+    }
+
+    @media screen and (min-width: 1800px) {
+        .space-section {
+            height: var(--space-md);
+          }
+     }
 
 /***WEBSITE-DECORATION***/
 
