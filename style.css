@@ -1,17 +1,18 @@
 :root {
     --font-family: "DM Sans", sans-serif;
-    --space-unit: 1rem;
-    --space-xs: calc(0.5 * var(--space-unit));
-    --space-sm: calc(1 * var(--space-unit));
-    --space-md: calc(2 * var(--space-unit));
-    --space-lg: calc(4 * var(--space-unit));
+    --space-unit: 1vw;
+    --space-sm: calc(2 * var(--space-unit));
+    --space-md: calc(4 * var(--space-unit));
+    --space-lg: calc(6 * var(--space-unit));
     --space-xl: calc(8 * var(--space-unit));
 }
 
 /***TABLE OF CONTENTS***/
 
-/***General***/
-/***Hero-Section***/
+/************************GENERAL************************/
+/*********************HERO-SECTION************************/
+    /*****Title*****/
+    /*****
 /***Services-Section***/
 /***About-Us-Section***/
 /***Contact-Section***/
@@ -21,55 +22,41 @@
 /***General***/
 
 /*Spacing Between Elements*/
-  .content-background > div {
-    margin-bottom: 1vw;
-  }
+ 
 
-  .content > div {
-    margin-bottom: 1vw;
-  }
-  /*
   @media screen and (min-width: 600px) {
-    .padding-bottom {
-        padding-bottom: var(--space-sm);
+    .space-section {
+        height: var(--space-sm);
       }
     }
 
     @media screen and (min-width: 900px) {
-        .padding-bottom {
-            padding-bottom: var(--space-md);
+        .space-section {
+            height: var(--space-md);
           }
         }
 
     @media screen and (min-width: 1200px) {
-    .padding-bottom {
-        padding-bottom: var(--space-lg);
+    .space-section {
+        height: var(--space-lg);
       }
     }
 
     @media screen and (min-width: 1800px) {
-        .padding-bottom {
-            padding-bottom: var(--space-xl);
+        .space-section {
+            height: var(--space-xl);
           }
         }
 
-*/
-
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
     font-family: var(--font-family);
-    margin: 0;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0px;
 }
 
 h4 {
