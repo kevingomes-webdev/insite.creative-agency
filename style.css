@@ -86,7 +86,7 @@ h2 {
 }
 
 p {
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 /***Services-Section***/
@@ -100,7 +100,26 @@ p {
 .icon-flexbox {
     display: flex;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 2vw;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+}
+
+.icon-grid p {
+    max-width: 80%;
+}
+
+@media screen and (min-width: 670px) {
+    .icon-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3vw;
+    }
 }
 
 /*************************************************/
