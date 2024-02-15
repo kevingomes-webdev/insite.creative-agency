@@ -1,5 +1,11 @@
 :root {
     --font-family: "DM Sans", sans-serif;
+    --space-unit: 1rem;
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(1 * var(--space-unit));
+    --space-md: calc(2 * var(--space-unit));
+    --space-lg: calc(4 * var(--space-unit));
+    --space-xl: calc(8 * var(--space-unit));
 }
 
 /***TABLE OF CONTENTS***/
@@ -15,21 +21,14 @@
 /***General***/
 
 /*Spacing Between Elements*/
+  .content-background > div {
+    margin-bottom: 1vw;
+  }
 
-:root {
-    /* Define your spacing scale */
-    --space-unit: 10rem;
-    --space-xs: calc(0.5 * var(--space-unit));
-    --space-sm: calc(1 * var(--space-unit));
-    --space-md: calc(2 * var(--space-unit));
-    --space-lg: calc(4 * var(--space-unit));
-    --space-xl: calc(8 * var(--space-unit));
+  .content > div {
+    margin-bottom: 1vw;
   }
-  
-  .padding-bottom {
-    padding-bottom: var(--space-xs);
-  }
-  
+  /*
   @media screen and (min-width: 600px) {
     .padding-bottom {
         padding-bottom: var(--space-sm);
@@ -54,11 +53,12 @@
           }
         }
 
-
+*/
 
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -98,10 +98,7 @@ p {
     width: clamp(1.5rem, 3vw, 7rem);
 }
 
-.foreground {
-    max-width: 900px;
-    margin: auto;
-}
+
 
 
 /*************************************************/
@@ -110,7 +107,7 @@ p {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: clamp(10rem, 50vw, 50rem);
+    height: fit-content;
 }
 
 /* Style the background video */
@@ -133,18 +130,19 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+    background-color: rgba(0, 0, 0, 0.85); /* Black overlay with 80% opacity */
     z-index: 1;
 }
 
 /* Style the content */
-.content {
+.content-background {
     position: relative;
     max-width: 1200px; /* Adjust this to your desired max-width */
     margin: 0 auto;
     padding: 20px;
     z-index: 2;
 }
+
 
 .content-white {
     color: white;
@@ -157,12 +155,6 @@ p {
 
 /***Contact-Section***/
 /***Website-Decoration***/
-
-
-
-body {
-    font-family: var(--font-family);
-}
 
 /***WEBSITE-DECORATION***/
 
