@@ -64,8 +64,9 @@ body {
 }
 
 h4, label {
-    text-transform: uppercase;
+    
     font-weight: 600;
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 
@@ -85,7 +86,7 @@ h2 {
 }
 
 p {
-    font-size: clamp(0.7rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
 /***Services-Section***/
@@ -167,18 +168,35 @@ p {
 
 /***Contact-Section***/
 
+textarea {
+    max-width: 100%;
+    width: 100%;
+}
+
 input:focus {
     border: 2px solid yellow;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: grey;
     opacity: 0.5;
 }
 
-input {
+input, textarea {
     font-size: clamp(0.7rem, 2vw, 1.2rem);
     font-family: var(--font-family);
+    margin-bottom: 3vw;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+.button {
+    border: 0px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 2vw;
 }
 
 @media screen and (max-width: 600px) {
