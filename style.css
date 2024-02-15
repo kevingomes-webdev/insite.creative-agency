@@ -1,10 +1,9 @@
 :root {
     --font-family: "DM Sans", sans-serif;
-    --space-unit: 1vw;
+    --space-unit: 4vw;
+    --space-xs: calc(1 * var(--space-unit));
     --space-sm: calc(2 * var(--space-unit));
-    --space-md: calc(4 * var(--space-unit));
-    --space-lg: calc(6 * var(--space-unit));
-    --space-xl: calc(8 * var(--space-unit));
+    --space-md: calc(3 * var(--space-unit));
 }
 
 /***TABLE OF CONTENTS***/
@@ -22,6 +21,11 @@
 /***General***/
 
 /*Spacing Between Elements*/
+@media screen and (max-width: 600px) {
+    .space-section {
+        height: var(--space-xs);
+      }
+    }
  
 
   @media screen and (min-width: 600px) {
@@ -38,13 +42,13 @@
 
     @media screen and (min-width: 1200px) {
     .space-section {
-        height: var(--space-lg);
+        height: var(--space-md);
       }
     }
 
     @media screen and (min-width: 1800px) {
         .space-section {
-            height: var(--space-xl);
+            height: var(--space-md);
           }
         }
 
