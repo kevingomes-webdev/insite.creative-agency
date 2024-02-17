@@ -241,18 +241,6 @@ input[type="date"] {
     background-color: white;
 }
 
-input[type="date"] {
-    background: #fff url('calendar_icon.png') 97% 50% no-repeat;
-  }
-  
-  input[type="date"]::-webkit-inner-spin-button {
-    display: none;
-  }
-  
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
-
 .button {
     border: 0px;
     background-color: black;
