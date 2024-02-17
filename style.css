@@ -1,8 +1,8 @@
 :root {
     --font-family: "DM Sans", sans-serif;
     --space-unit: 4vw;
-    --space-xs: calc(4 * var(--space-unit));
-    --space-sm: calc(4 * var(--space-unit));
+    --space-xs: calc(12 * var(--space-unit));
+    --space-sm: calc(8 * var(--space-unit));
     --space-md: calc(4 * var(--space-unit));
 }
 
@@ -229,6 +229,7 @@ input::placeholder, textarea::placeholder {
 input, textarea {
     font-size: clamp(0.7rem, 2vw, 1.2rem);
     font-family: var(--font-family);
+    padding: 1rem 0;
     margin-bottom: 3vw;
     width: 100%;
     border: 0px;
