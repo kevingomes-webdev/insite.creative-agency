@@ -9,14 +9,18 @@ timeLine.to('.pre-loader > .overlay-preloader', {top: '0', delay: 0.2})
 timeLine.to(".overlay-preloader", {autoAlpha: "0", delay: 0})
 timeLine.to(".pre-loader", {autoAlpha: "0", delay: 0})
 
+let elements = $(".content-background");
 
-gsap.from(".content-child", {
-    scrollTrigger: {
-      trigger: ".content-child",
-      start: "top 75%", // start when top of the element is 75% from the top of the viewport
-      end: "bottom bottom", // end when bottom of the element is at the bottom of the viewport
-      scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    },
-    opacity: 0, // start at 0 opacity
-    duration: 1, // duration of 1 second
+elements.each(function() {
+  gsap.from(this, {
+      scrollTrigger: {
+          trigger: this,
+          start: "top 50%",
+          end: "bottom bottom",
+          scrub: 1,
+      },
+      x: -500,
+      autoAlpha: 0,
+      duration: 3,
   });
+});
