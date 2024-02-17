@@ -17,6 +17,7 @@
 /***Contact-Section***/
 /***Website-Decoration***/
 /***Pre-loader****/
+/****FadeIn & FadeOut***/
 
 
 /***General***/
@@ -236,6 +237,10 @@ input, textarea {
     border-bottom: 1px solid black;
 }
 
+input[date] {
+    background-color: white;
+}
+
 .button {
     border: 0px;
     background-color: black;
@@ -325,3 +330,6 @@ html {
     z-index: 6;
     background-color: black;
 }
+
+/****FadeIn & FadeOut***/
+
