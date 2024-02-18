@@ -1,4 +1,6 @@
 # INSITE Creative Design Agency
-Website of the agency
+Fictious Company
 
-![alt text](Svg/company-logo-insite.svg)
+
+
+
