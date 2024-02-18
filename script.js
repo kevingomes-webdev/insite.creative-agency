@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Use a more mobile-friendly event like "wheel" or "touchstart"
-ScrollTrigger.addEventListener("touchstart", ScrollTrigger.update); 
+ScrollTrigger.addEventListener("wheel", ScrollTrigger.update); 
 
 const preloaderTimeline = gsap.timeline({ defaults: { duration: 1 } });
 
@@ -16,7 +16,7 @@ animatedElements.each(function() {
   gsap.from(this, {
     scrollTrigger: {
       trigger: this,
-      start: "top 80%",
+      start: "top 50%",
       end: "bottom bottom",
       scrub: 1,
       // Add passive event listener:
