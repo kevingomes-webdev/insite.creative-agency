@@ -1,14 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Use a more mobile-friendly event like "wheel" or "touchstart"
-ScrollTrigger.addEventListener("wheel", ScrollTrigger.update); 
+ScrollTrigger.addEventListener("touchstart", ScrollTrigger.update); 
 
 const preloaderTimeline = gsap.timeline({ defaults: { duration: 1 } });
 
 preloaderTimeline
   .fromTo('.pre-loader > .overlay-preloader', { top: '100%' }, { top: '0%', ease: 'power2.out', duration: 5 })
   .to([".overlay-preloader", ".pre-loader"], { autoAlpha: 0 })
-  .to(".first-animation", { from: { x: -100 }, to: { x: 0 }, delay: 3 });
+  .to(".first-animation", { from: { x: -100 }, to: { x: 0 }, ease: 'power2.out', duration: 3});
 
 const animatedElements = $(".animation");
 
@@ -18,7 +18,7 @@ animatedElements.each(function() {
       trigger: this,
       start: "top 80%",
       end: "bottom bottom",
-      scrub: true,
+      scrub: 1,
       // Add passive event listener:
       useCapture: true
     },
