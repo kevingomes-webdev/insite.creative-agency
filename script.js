@@ -18,12 +18,12 @@ animatedElements.each(function() {
       trigger: this,
       start: "top 65%",
       end: "bottom bottom",
-      scrub: 1,
+      scrub: true,
       // Add passive event listener:
       useCapture: true
     },
     x: -100,
     autoAlpha: 0,
-    duration: 3,
+    duration: 2,
   });
 });
