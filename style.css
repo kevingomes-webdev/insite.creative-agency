@@ -11,16 +11,14 @@
 /***TABLE OF CONTENTS***/
 
 /************************GENERAL************************/
-/*********************HERO-SECTION************************/
-    /*****Title*****/
-    /*****
+/***SECTIONS****/
+/***Hero-Section***/
 /***Services-Section***/
 /***About-Us-Section***/
 /***Contact-Section***/
 /***Footer-Section***/
 /***Website-Decoration***/
 /***Pre-loader****/
-/****FadeIn & FadeOut***/
 
 
 /***General***/
@@ -91,6 +89,53 @@ h4, label {
     opacity: 0;
 }
 
+/****SECTIONS*******/
+
+/* Style the section */
+.background-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+}
+
+/* Style the background video */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 80% opacity */
+    z-index: 1;
+}
+
+/* Style the content */
+.content-background {
+    position: relative;
+    max-width: 1200px; /* Adjust this to your desired max-width */
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+
+.content-white {
+    color: white;
+}
 
 
 /***Hero-Section***/
@@ -146,55 +191,6 @@ h3 {
         gap: 6vw;
     }
 }
-
-/*************************************************/
-/* Style the section */
-.background-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: fit-content;
-}
-
-/* Style the background video */
-.background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-}
-
-/* Style the overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 80% opacity */
-    z-index: 1;
-}
-
-/* Style the content */
-.content-background {
-    position: relative;
-    max-width: 1200px; /* Adjust this to your desired max-width */
-    margin: 0 auto;
-    padding: 20px;
-    z-index: 2;
-}
-
-
-.content-white {
-    color: white;
-}
-  
-  /* Additional styles for other sections */
 
 /***About-Us-Section***/
 
