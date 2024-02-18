@@ -29,6 +29,7 @@
 @media screen and (max-width: 600px) {
     .space-section {
         height: var(--space-xs);
+        opacity: 0;
       }
     }
  
@@ -36,30 +37,35 @@
   @media screen and (min-width: 600px) {
     .space-section {
         height: var(--space-sm);
+        opacity: 0;
       }
     }
 
     @media screen and (min-width: 900px) {
         .space-section {
             height: var(--space-md);
+            opacity: 0;
           }
         }
 
     @media screen and (min-width: 1200px) {
     .space-section {
         height: var(--space-md);
+        opacity: 0;
       }
     }
 
     @media screen and (min-width: 1500px) {
         .space-section {
             height: var(--space-lg);
+            opacity: 0;
           }
         }
 
     @media screen and (min-width: 1800px) {
         .space-section {
             height: var(--space-xl);
+            opacity: 0;
           }
      }
 
@@ -82,6 +88,7 @@ h4, label {
 
 .space {
     height: 4rem;
+    opacity: 0;
 }
 
 
@@ -226,7 +233,7 @@ textarea {
 }
 
 label {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 input:focus {
@@ -241,7 +248,7 @@ input::placeholder, textarea::placeholder {
 input, textarea {
     font-size: clamp(0.7rem, 2vw, 1.2rem);
     font-family: var(--font-family);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     margin-bottom: 3vw;
     width: 100%;
     border: 0px;
