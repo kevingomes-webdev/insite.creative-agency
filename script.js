@@ -16,14 +16,13 @@ animatedElements.each(function() {
   gsap.from(this, {
     scrollTrigger: {
       trigger: this,
-      start: "top 65%",
+      start: "top top",
       end: "bottom bottom",
       scrub: true,
-      // Add passive event listener:
-      useCapture: true
+      useCapture: true,
     },
-    x: -50,
+    x: "-100%", // Using percentage as an example
     autoAlpha: 0,
-    duration: 2,
+    duration: 1,
   });
 });
