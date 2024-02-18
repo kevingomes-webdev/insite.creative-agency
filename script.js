@@ -22,7 +22,7 @@ animatedElements.each(function() {
       // Add passive event listener:
       useCapture: true
     },
-    x: -100,
+    x: -50,
     autoAlpha: 0,
     duration: 2,
   });
