@@ -1,6 +1,6 @@
 # INSITE Creative Design Agency
 Fictious Company
 
-![alt text](Svg/company-logo-insite-readMe.svg)
+![alt text](Images/insite-presentation.jpg)
 
 
